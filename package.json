@@ -1,0 +1,33 @@
+{
+	"name": "jhp"
+	, "preferGlobal": "true"
+	, "description": "php-like syntax on top of nodejs (bring on the death threats!)"
+	, "version": "0.1.0"
+	, "homepage": "http://github.com/jaubourg/jhp"
+	, "repository": {
+		"type": "git"
+		, "url": "git://github.com/jaubourg/jhp"
+	}
+	, "author": "Julian Aubourg <j@ubourg.net> (http://jaubourg.net/)"
+	, "bin": {
+		"jhp": "bin/jhp"
+	}
+	, "dependencies": {
+		"JQDeferred": "1.7.x"
+		, "mime": "1.2.x"
+		, "wrench": "1.3.x"
+	}
+	, "engines": {
+		"node": ">0.6"
+	}
+	, "licenses": [
+		{
+			"type": "GPLv2",
+			"url": "http://www.opensource.org/licenses/gpl-2.0.php"
+		},
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	]
+}
