@@ -2,7 +2,7 @@
 	"name": "jhp"
 	, "preferGlobal": "true"
 	, "description": "php-like syntax on top of nodejs (bring on the death threats!)"
-	, "version": "0.1.0"
+	, "version": "0.1.1"
 	, "homepage": "http://github.com/jaubourg/jhp"
 	, "repository": {
 		"type": "git"
@@ -15,7 +15,6 @@
 	, "dependencies": {
 		"JQDeferred": "1.7.x"
 		, "mime": "1.2.x"
-		, "wrench": "1.3.x"
 	}
 	, "engines": {
 		"node": ">0.6"
