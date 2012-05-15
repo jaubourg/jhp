@@ -1,17 +1,11 @@
 #!/usr/bin/env node
 
-if ( !/jhp(?:\.cmd)$/.test( process.argv[ 0 ] ) ) {
-	process.argv = process.argv.slice( 1 );
-}
+var program = require("commander");
 
-var actions = {
-		start: "server.js"
-	},
-	action = actions[ process.argv[ 1 ] ];
+program
+  .version("0.2.0")
+  .option("-d, --dir  [path]", "Specify root directory (default './')")
+  .option("-p, --port [number]", "Specify port number (default 80)")
+  .parse(process.argv);
 
-if ( !action ) {
-	console.error( "Usage: jhp start [ folder ]" );
-	process.exit( -1 );
-}
-
-require( "../lib/" + action )( process.argv[ 2 ] || "." );
+require("../lib/server")( program.dir, program.port );

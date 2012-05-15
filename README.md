@@ -11,24 +11,22 @@ JHP brings a PHP-like approach to Node.JS programming. To make it brief it's a *
 
 `npm install jhp -g`
 
-In a folder, create a package.json file with the following elements:
+Then, use the command-line application `jhp`:
 
-```javascript
-{
-	"public": "path/to/htdocs",
-	"port": 8080
-}
 ```
+  Usage: jhp [options]
 
-Where:
-* `public` is the root of the web server,
-* `port` is the port the server has to listen to.
+  Options:
 
-Then, in the command line: `jhp start path/to/folder/with/config` (by default `jhp` will look into the current directory)
+    -h, --help           output usage information
+    -V, --version        output the version number
+    -d, --dir  [path]    Specify root directory (default './')
+    -p, --port [number]  Specify port number (default 80)
+```
 
 ## Use
 
-In the main public folder, create `index.jhp`:
+In the root directory, create `index.jhp`:
 
 ```javascript
 <?
@@ -68,7 +66,7 @@ So, yes, it's pretty much the same as PHP:
 
 * parsedURL, the request url as parsed by `require("url").parse( url, true )`
 
-*(the promises are implemented by [JQDeferred](/jaubourg/jquery-deferred-for-node))*
+(promises provided by [JQDeferred](/jaubourg/jquery-deferred-for-node))
 
 **Remember**: this is still Node.JS we're talking about, so always call `reponse.end()` when you wanna flush the response!
 
@@ -82,6 +80,6 @@ JHP is pretty fresh out of the oven, code is crude and features are sparse...
 
 So it needs **you**:
 * what kind of pluggable architecture should it have?
-* what built-in feature is it lacking?
+* what built-in features is it lacking?
 
 What we intend to work on right now is the static file serving part.
