@@ -32,7 +32,7 @@ In the root directory, create `index.jhp`:
 <?
 	response.setHeader( "Content-Type", "text/plain" );
 	response.write( request.url );
-	request.end();
+	response.end();
 ```
 
 So, yes, it's pretty much the same as PHP:
