@@ -2,7 +2,7 @@
 	"name": "jhp"
 	, "preferGlobal": "true"
 	, "description": "php-like syntax on top of nodejs (bring on the death threats!)"
-	, "version": "0.2.1"
+	, "version": "0.3.0pre"
 	, "homepage": "http://github.com/jaubourg/jhp"
 	, "repository": {
 		"type": "git"
